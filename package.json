@@ -1,0 +1,24 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "data structures and algorithms problems",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Albert-Osei/dsa-test-solutions.git"
+  },
+  "keywords": [
+    "data",
+    "structures",
+    "algorithms"
+  ],
+  "author": "albert0711",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Albert-Osei/dsa-test-solutions/issues"
+  },
+  "homepage": "https://github.com/Albert-Osei/dsa-test-solutions#readme"
+}

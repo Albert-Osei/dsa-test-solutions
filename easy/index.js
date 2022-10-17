@@ -49,7 +49,7 @@ var longestCommonPrefix = function(strs) {
         for (let j = 0; j < strs.length; j++) {
             // Check if the character of the first string is the same as that of the current position of the word
             if (strs[0][i] !== strs[j][i]) {
-                return strs[0].slice(0, 1)
+                return strs[0].slice(0, i)
             }
         }
     }

@@ -31,4 +31,28 @@ var romanToInt = function(s) {
     return result
 }
 
-console.log(romanToInt('III'))
+console.log(romanToInt('IX'))
+
+/**
+ * PROBLEM 2: Longest Common Prefix
+ * Find the longest prefix string amongst an array of strings
+ * @param {String[]} strs
+ * @return {String}
+ */
+var longestCommonPrefix = function(strs) {
+    //Return nothing if strs is empty
+    if (!strs.length) return ''
+
+    // Loop through the characters of the first string
+    for (let i = 0; i < strs[0].length; i++) {
+        // Loop through the remaining words
+        for (let j = 0; j < strs.length; j++) {
+            // Check if the character of the first string is the same as that of the current position of the word
+            if (strs[0][i] !== strs[j][i]) {
+                return strs[0].slice(0, 1)
+            }
+        }
+    }
+}
+
+console.log(longestCommonPrefix(["flower", "flow", "flight"]))
